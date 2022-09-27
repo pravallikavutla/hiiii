@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<h1><span>Addition of numbers</span></h1>
+<script>
+    function add() {
+        var one = parseInt(document.getElementById("first").value);
+        var two = parseInt(document.getElementById("second").value);
+        var sum = one + two;
+        document.getElementById("opt").value = sum;
+    }
+</script>
+<style>
+body {
+  background-color: #80ced6;4               
+
+}
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+button onclick{
+color: black;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+    <p>Give a number:<input id="first"><div style="background-color:#80ced6;"></div></p>
+    <p>Give a number:<input id="second"><div style="background-color:#fefbd8;"></div></p>
+    <div class="center"><button onclick="add()">Add</button></div>
+    <p>sum=<input id="opt"></p>
+
+</body>
+
+</html>
